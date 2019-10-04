@@ -8,7 +8,7 @@
 .section-header {
   .section-title {
     font-size: 32px;
-    color: #111;
+    color: $heading-about-color;
     text-transform: uppercase;
     text-align: center;
     font-weight: 700;
@@ -207,18 +207,18 @@
 /* Call To Action Section
 --------------------------------*/
 #call-to-action {
-  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/call-to-action-bg.jpg) fixed center center;
+  background: url(../img/call-to-action.jpg) fixed center center;
   background-size: cover;
   padding:  80px 0;
 
   .cta-title {
-    color: #fff;
+    color: $heading-color;
     font-size: 28px;
     font-weight: 700;
   }
 
   .cta-text {
-    color: #fff;
+    color: $text-color;
   }
 
   .cta-btn-container {
