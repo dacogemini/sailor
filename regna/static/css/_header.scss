@@ -73,7 +73,7 @@
 
   &:before {
     content: "";
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.303);
     position: absolute;
     bottom: 0;
     top: 0;
@@ -108,9 +108,10 @@
   }
 
   h2 {
-    color: #eee;
-    margin-bottom: 50px;
-    font-size: 24px;
+    color: $heading-brand-color;
+    vertical-align: middle;
+    margin-bottom: 30px;
+    font-size: 34px;
 
     @media (max-width: 768px) {
       font-size: 18px;
@@ -121,6 +122,7 @@
 
   .btn-get-started {
     font-family: $heading-font;
+    vertical-align: middle;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 16px;

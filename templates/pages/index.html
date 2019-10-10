@@ -1,9 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 {% load static %}
-<!--==========================
-  Header
-  ============================-->
+<!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
 <header id="header">
   <div class="container">
 
@@ -13,47 +11,64 @@
       <!-- Uncomment below if you prefer to use a text logo -->
       <h1><a href="#hero">Janus Travel</a></h1>
     </div>
-
+    <!--- Nav Menu Container ---->
     <nav id="nav-menu-container">
       <ul class="nav-menu">
         <li class="menu-active"><a href="#hero">Home</a></li>
         <li><a href="#about">About Us</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#team">Team</a></li>
-        <li class="menu-has-children"><a href="">Drop Down</a>
-          <ul>
-            <li><a href="#">Drop Down 1</a></li>
-            <li class="menu-has-children"><a href="#">Drop Down 2</a>
-              <ul>
-                <li><a href="#">Deep Drop Down 1</a></li>
-                <li><a href="#">Deep Drop Down 2</a></li>
-                <li><a href="#">Deep Drop Down 3</a></li>
-                <li><a href="#">Deep Drop Down 4</a></li>
-                <li><a href="#">Deep Drop Down 5</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Drop Down 3</a></li>
-            <li><a href="#">Drop Down 4</a></li>
-            <li><a href="#">Drop Down 5</a></li>
-          </ul>
-        </li>
+        <li><a href="#resorts">Resorts</a></li>
+        <li><a href="#portfolio">Destinations</a></li>
+        <li><a href="#team">Testimonials</a></li>
         <li><a href="#contact">Contact Us</a></li>
       </ul>
-    </nav><!-- #nav-menu-container -->
+    </nav>
+    <!-- END nav-menu-container -->
   </div>
-</header><!-- #header -->
+</header>
+<!--~~~~~~~~~~~~~ END Header ~~~~~~~~~~~~~-->
 
-<!--==========================
-    Hero Section
-  ============================-->
+<!--####################################################################-->
+<!--############################### INDEX ##############################-->
+<!--####################################################################-->
+
 <section id="hero">
   <div class="hero-container">
-    <h1>The Vacation Specialists</h1>
-    <h2>Let us be your guide to the world</h2>
-    <a href="#about" class="btn-get-started">Get Started</a>
+    <!---------- Facts ---------->
+    <section id="facts">
+      <div class="container wow fadeIn">
+        <div class="section-header">
+          <div class="section-title">
+            <h2 class="wow flipInX">What's your next adventure?
+              <a href="#about" class="btn-get-started">Let's Get Started</a>
+            </h2>
+          </div>
+          <!------- 🔢------->
+          <div class="row counters">
+            <div class="col-lg-3 col-6 text-center">
+              <span data-toggle="counter-up">93</span>
+              <p>Percentage of Costa Rica's electricity from renewable resources.</p>
+            </div>
+            <div class="col-lg-3 col-6 text-center">
+              <span data-toggle="counter-up">470</span>
+              <p>Underwater sculpture garden at the Underwater Museum of Art in Cancun Mexico.</p>
+            </div>
+            <div class="col-lg-3 col-6 text-center">
+              <span data-toggle="counter-up">181</span>
+              <p>Caribbean islands to explore. How many have you been to?</p>
+            </div>
+            <div class="col-lg-3 col-6 text-center">
+              <span data-toggle="counter-up">30</span>
+              <p>Percentage of Costa Rica's land conservation.'</p>
+            </div>
+          </div>
+         <!--------- END 🔢 ---------->
+        </div>
+    </section> 
+    <!-------- END Facts -------->
   </div>
-</section><!-- #hero -->
+</section>
+<!--~~~~~~~~~~~~~ END Index ~~~~~~~~~~~~~~-->
 
 <main id="main">
   <!--####################################################################-->
@@ -62,7 +77,6 @@
   <section id="about">
     <div class="container">
       <div class="row about-container">
-
         <div class="col-lg-6 content order-lg-1 order-2">
           <h2 class="title">Few Words About Us</h2>
           <p>
@@ -78,87 +92,46 @@
             <h4 class="title"><a href="">What a deal!</a></h4>
             <p class="description">Janus Travel strives to secure the best prices for your vacation packages!</p>
           </div>
-
           <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
             <div class="icon"><i class="far fa-sun"></i></div>
             <h4 class="title"><a href="">Fun in the sun!</a></h4>
             <p class="description">Janus Travel specializes in vacation packages to the Caribbean, Mexico, Hawaii and
               Las Vegas and more!. </p>
           </div>
-
           <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
             <div class="icon"><i class="fas fa-globe-americas"></i></div>
             <h4 class="title"><a href="">We've been there!'</a></h4>
             <p class="description">Our specialized agents have traveled the world to gain first-hand knowledge of the
               destinations we sell.'</p>
           </div>
-
         </div>
-
         <div class="col-lg-6 background order-lg-2 order-1 wow fadeInRight"></div>
       </div>
-
-    </div>
-  </section><!-- #about -->
-  <!--####################################################################-->
-  <!--########################## FACTS SECTION ###########################-->
-  <!--####################################################################-->
-  <section id="facts">
-    <div class="container wow fadeIn">
-      <div class="section-header">
-        <h3 class="section-title">Fun Facts</h3>
-        <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-          doloremque</p>
-      </div>
-      <div class="row counters">
-
-        <div class="col-lg-3 col-6 text-center">
-          <span data-toggle="counter-up">93</span>
-          <p>Percentage of Costa Rica's electricity from renewable resources.</p>
-        </div>
-
-        <div class="col-lg-3 col-6 text-center">
-          <span data-toggle="counter-up">470</span>
-          <p>Underwater sculpture garden at the Underwater Museum of Art in Cancun Mexico.</p>
-        </div>
-
-        <div class="col-lg-3 col-6 text-center">
-          <span data-toggle="counter-up">181</span>
-          <p>Caribbean islands to explore.</p>
-        </div>
-
-        <div class="col-lg-3 col-6 text-center">
-          <span data-toggle="counter-up">30</span>
-          <p>Percentage of Costa Rica's land conservation.'</p>
-        </div>
-
-      </div>
-
     </div>
   </section>
-  <!-------- END Facts -------->
+  <!-- END about -->
+
   <!--####################################################################-->
   <!--######################### SERVICES SECTION #########################-->
   <!--####################################################################-->
   <section id="services">
     <div class="container wow fadeIn">
       <div class="section-header">
-        <h3 class="section-title">SERVICES</h3>
-        <div class="alert alert-warning alert-dismissible fade show wow bounceIn" role="alert">
+        <h3 class="section-title">SERVICES WE OFFER</h3>
+        <br />
+        <div class="alert alert-success alert-dismissible fade show wow bounceIn" role="alert">
           Hey, thanks for visit our site! Just a heads-up, clicking on the links below will take you to a valued
           partner's website not maintained by Janus Travel. Remember, we are a travel agency, not the supplier of your
           vacation so it's important to check for accuracy. You know, things like dates, durations, departure airport,
           information pertaining to children traveling, etc. Oh and one last thing, have a wonderful trip and thank you
-          for choosing Janus Travel! 
+          for choosing Janus Travel!
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true"><i class="fas fa-times-circle"></i></span>
           </button>
         </div>
         <p class="section-description"></p>
       </div>
-      <!--=====================================================-->
-      <!--==================== L-M-D ==========================-->
-      <!--=====================================================-->
+      <!---- Last-Minute-Deals ---->
       <div class="row">
         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
           <div class="box">
@@ -168,14 +141,11 @@
             <p class="description">Funjet Vacations offers travel deals to your favorite destinations such as Mexico,
               Jamaica, the Caribbean and more.</p>
           </div>
-        </div><!-- END Service One -->
-        <!--=====================================================-->
-        <!--==================== RESORTS ========================-->
-        <!--=====================================================-->
+        </div>
+        <!--------- Resorts --------->
         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
           <div class="box">
-            <div class="icon"><a href="https://www.funjet.com/resorts/breathless?plcode=14680584" data-toggle="modal"
-                data-target="#exampleModalCenter" target="_blank"><i class="fas fa-spa"></i></a></div>
+            <div class="icon"><a href="https://www.funjet.com/resorts/breathless?plcode=14680584" data-target="#exampleModalCenter" target="_blank"><i class="fas fa-spa"></i></a></div>
             <h4 class="title"><a href="">Featured Resorts</a></h4>
             <p class="description">Check back often for details on some of our favorite resorts!</p>
           </div>
@@ -191,52 +161,124 @@
               fugiat nulla pariatur</p>
           </div>
         </div>
-
         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
           <div class="box">
-            <div class="icon"><a href="http://www.globustravelagent.com/Vacation-Packages/Tour-Asia/China-Japan/?id=53561" target="_blank"><i class="fas fa-globe-asia"></i></a></div>
+            <div class="icon"><a
+                href="http://www.globustravelagent.com/Vacation-Packages/Tour-Asia/China-Japan/?id=53561"
+                target="_blank"><i class="fas fa-globe-asia"></i></a></div>
             <h4 class="title"><a href="">Asia Escorted Tours</a></h4>
-            <p class="description">Discover Asia's most famous cities—Beijing, Tokyo, Hong Kong, Shanghai, Delhi, Ho Chi Minh, Hanoi, Siem Reap, and Bangkok—as well as its many cultural treasures.</p>
+            <p class="description">Discover Asia's most famous cities—Beijing, Tokyo, Hong Kong, Shanghai, Delhi, Ho Chi
+              Minh, Hanoi, Siem Reap, and Bangkok—as well as its many cultural treasures.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
           <div class="box">
-            <div class="icon"><a href="https://www.lomasagentportal.com/1673/tours.html" target="_blank"><i class="fas fa-route"></i></a></div>
+            <div class="icon"><a href="https://www.lomasagentportal.com/1673/tours.html" target="_blank"><i
+                  class="fas fa-route"></i></a></div>
             <h4 class="title"><a href="">Cancun & Riviera Maya Tours</a></h4>
-            <p class="description">Experience an awe-inspiring sunset on board a modern catamaran while enjoying delicious canapes and domestic open bar. See more here!</p>
+            <p class="description">Experience an awe-inspiring sunset on board a modern catamaran while enjoying
+              delicious canapes and domestic open bar. See more here!</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
           <div class="box">
-            <div class="icon"><a href="http://www.cosmostravelagent.com/Vacations/Africa/" target="_blank"><i class="fas fa-globe-africa"></i></a></div>
+            <div class="icon"><a href="http://www.cosmostravelagent.com/Vacations/Africa/" target="_blank"><i
+                  class="fas fa-globe-africa"></i></a></div>
             <h4 class="title"><a href="">Africa Tours</a></h4>
-            <p class="description">On your escorted tour, you can explore captivating Morocco and it's rich history and culture, historical sites and authentic cuisine.</p>
+            <p class="description">On your escorted tour, you can explore captivating Morocco and it's rich history and
+              culture, historical sites and authentic cuisine.</p>
           </div>
         </div>
       </div>
-
     </div>
-  </section><!-- #services -->
-  <!--####################################################################-->
-  <!--###################### CALL TO ACTION SECTION ######################-->
-  <!--####################################################################-->
-  <section id="call-to-action">
-    <div class="container wow fadeIn">
-      <div class="row">
-        <div class="col-lg-9 text-center text-lg-left">
-          <h3 class="cta-title"></h3>
-          <p class="cta-text"> </p>
+  </section><!-- END services -->
+  
+  <section id="resorts">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">Resorts</h3>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
         </div>
-        <div class="col-lg-3 cta-btn-container text-center">
-          <a class="cta-btn align-middle" href="#">Submit</a>
+        <div class="row">
+          <div class="col-md-12">
+              <ul class="list-unstyled">
+                  <li class="media">
+                    <img style="width: 200px;" src="{% static 'img/resorts/breathless.jpg' %}" class="mr-3" alt="...">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">Breathless Resorts & Spa</h5>
+                      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                  </li>
+                  <li class="media my-4">
+                    <img style="width: 200px;" src="{% static 'img/resorts/dreams.jpg' %}" class="mr-3" alt="...">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">Dreams Resorts & Spas</h5>
+                      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                  </li>
+                  <li class="media">
+                    <img style="width: 200px;" src="{% static 'img/resorts/now.jpg' %}" class="mr-3" alt="...">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">NOW Resorts & Spa</h5>
+                      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                  </li>
+                </ul>
+              <div class="nav-container">
+                  <ul>
+                      <li><a href="https://www.funjet.com/resorts/breathless">Breathless Resorts & Spa</a></li>
+                      <li><a href="https://www.funjet.com/resorts/dreams">Dreams Resorts & Spas</a></li>
+                      <li><a href="https://www.funjet.com/resorts/now">Now Resorts & Spas</a></li>
+                      <li><a href="https://www.funjet.com/resorts/reflect-resorts-and-spas">Reflect Resorts & Spas</a></li>
+                      <li><a href="https://www.funjet.com/resorts/secrets">Secrets Resorts & Spas</a></li>
+                      <li><a href="https://www.funjet.com/resorts/sunscape ">Sunscape Resorts & Spas</a></li>
+                      <li><a href="https://www.funjet.com/resorts/zoetry ">Zoëtry Wellness & Spa Resorts</a></li>
+                      <li><a href="https://www.funjet.com/resorts/azul">Azul Beach Resorts</a></li>
+                      <li><a href="https://www.funjet.com/resorts/barcelo">Barceló Hotel Group</a></li>
+                      <li><a href="https://www.funjet.com/resorts/be-live">Be Live Hotels</a></li>
+                  </ul>
+                  <ul style="padding-right: 15px;">
+                      <li><a href="https://www.funjet.com/resorts/chic-punta-cana">CHIC Punta Cana</a></li>
+                      <li><a href="https://www.funjet.com/resorts/el-dorado">El Dorado</a></li>
+                      <li><a href="https://www.funjet.com/resorts/fiesta-americana">Fiesta Americana</a></li>
+                      <li><a href="https://www.funjet.com/resorts/generations">Generations</a></li>
+                      <li><a href="https://www.funjet.com/resorts/hard-rock">Hard Rock Hotels</a></li>
+                      <li><a href="https://www.funjet.com/resorts/iberostar">Iberostar Hotels & Resorts</a></li>
+                      <li><a href="https://www.funjet.com/resorts/hotel-xcaret">Hotel Xcaret </a></li>
+                      <li><a href="https://www.funjet.com/resorts/live-aqua">Live Aqua Hotels & Resorts</a></li>
+                      <li><a href="https://www.funjet.com/resorts/memories">Memories Resorts & Spa</a></li>
+                  </ul>
+                  <ul>
+                      <li><a href="https://www.funjet.com/resorts/nickelodeon-hotels-and-resorts-punta-cana">Nickelodeon Resort Punta Cana</a></li>
+                      <li><a href="https://www.funjet.com/resorts/nobu-hotel">Nobu Hotels</a></li>
+                      <li><a href="https://www.funjet.com/resorts/oasis">Oasis Hotels & Resorts</a></li>
+                      <li><a href="https://www.funjet.com/resorts/palladium">Palladium Hotel Group</a></li>
+                      <li><a href="https://www.funjet.com/resorts/riu">riu hotels & resorts</a></li>
+                      <li><a href="https://www.funjet.com/resorts/royalton-luxury">Royalton Luxury</a></li>
+                      <li><a href="https://www.funjet.com/resorts/the-explorean">The Explorean</a></li>
+                      <li><a href="https://www.funjet.com/resorts/unico-20-87">UNICO 20°87°</a></li>
+                      <li><a href="https://www.funjet.com/destinations/walt-disney-world">Walt Disney World<sup>®</sup> Resort</a></li>
+                  </ul>
+              </div>
+        
+        
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
+
       </div>
+    </section><!-- #team -->
 
-    </div>
-  </section><!-- #call-to-action -->
   <!--####################################################################-->
   <!--######################## PORTFOLIO SECTION #########################-->
   <!--####################################################################-->
+
   <section id="portfolio">
     <div class="container wow fadeInUp">
       <div class="section-header">
@@ -245,7 +287,6 @@
           doloremque</p>
       </div>
       <div class="row">
-
         <div class="col-lg-12">
           <ul id="portfolio-flters">
             <li data-filter=".filter-app, .filter-card, .filter-logo, .filter-web" class="filter-active">All</li>
@@ -269,7 +310,6 @@
             </div>
           </a>
         </div>
-
         <div class="col-lg-3 col-md-6 portfolio-item filter-app">
           <a href="">
             <img src="{% static 'img/mexico/cozumel-thumb.jpg' %}" alt="">
@@ -279,7 +319,6 @@
             </div>
           </a>
         </div>
-
         <div class="col-lg-3 col-md-6 portfolio-item filter-app">
           <a href="">
             <img src="{% static 'img/mexico/rivmaya-img.jpg' %}" alt="">
@@ -289,7 +328,6 @@
             </div>
           </a>
         </div>
-
         <div class="col-lg-3 col-md-6 portfolio-item filter-app">
           <a href="https://www.funjet.com/destinations/cancun">
             <img src="{% static 'img/mexico/cancun2.jpg' %}" alt="">
@@ -299,7 +337,6 @@
             </div>
           </a>
         </div>
-
         <div class="col-lg-3 col-md-6 portfolio-item filter-app">
           <a href="">
             <img src="{% static 'img/mexico/huatulco-thumb.jpg' %}" alt="">
@@ -309,7 +346,6 @@
             </div>
           </a>
         </div>
-
         <div class="col-lg-3 col-md-6 portfolio-item filter-app">
           <a href="">
             <img src="{% static 'img/mexico/ixtapa-thumb.jpg' %}" alt="">
@@ -319,7 +355,6 @@
             </div>
           </a>
         </div>
-
         <div class="col-lg-3 col-md-6 portfolio-item filter-app">
           <a href="https://www.funjet.com/destinations/los-cabos">
             <img src="{% static 'img/mexico/loscabos-thumb.jpg' %}" alt="">
@@ -329,7 +364,6 @@
             </div>
           </a>
         </div>
-
         <div class="col-lg-3 col-md-6 portfolio-item filter-app">
           <a href="https://www.funjet.com/destinations/los-cabos">
             <img src="{% static 'img/mexico/mazatlan-thumb.jpg' %}" alt="">
@@ -349,7 +383,6 @@
             </div>
           </a>
         </div>
-
         <div class="col-lg-3 col-md-6 portfolio-item filter-card">
           <a href="">
             <img src="{% static 'img/costa_rica/monteverde.jpeg' %}" alt="">
@@ -359,7 +392,6 @@
             </div>
           </a>
         </div>
-
         <div class="col-lg-3 col-md-6 portfolio-item filter-card">
           <a href="">
             <img src="{% static 'img/costa_rica/guanacaste.jpg' %}" alt="">
@@ -369,7 +401,6 @@
             </div>
           </a>
         </div>
-
         <div class="col-lg-3 col-md-6 portfolio-item filter-card">
           <a href="">
             <img src="{% static 'img/costa_rica/sanjose-thumb.jpg' %}" alt="">
@@ -379,7 +410,6 @@
             </div>
           </a>
         </div>
-
         <!--~~~~~~~~~~~~~ Caribbean ~~~~~~~~~~~~~~-->
         <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
           <a href="">
@@ -390,7 +420,6 @@
             </div>
           </a>
         </div>
-
         <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
           <a href="">
             <img src="{% static 'img/caribbean/aruba.jpeg' %}" alt="">
@@ -400,7 +429,6 @@
             </div>
           </a>
         </div>
-
         <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
           <a href="">
             <img src="{% static 'img/caribbean/bahamas.jpeg' %}" alt="">
@@ -410,7 +438,6 @@
             </div>
           </a>
         </div>
-
         <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
           <a href="">
             <img src="{% static 'img/caribbean/barbados.jpeg' %}" alt="">
@@ -430,7 +457,6 @@
             </div>
           </a>
         </div>
-
         <div class="col-lg-3 col-md-6 portfolio-item filter-web">
           <a href="">
             <img src="{% static 'img/hawaii/oahu-thumb.jpg' %}" alt="">
@@ -440,7 +466,6 @@
             </div>
           </a>
         </div>
-
         <div class="col-lg-3 col-md-6 portfolio-item filter-web">
           <a href="">
             <img src="{% static 'img/hawaii/maui-thumb.jpg' %}" alt="">
@@ -450,7 +475,6 @@
             </div>
           </a>
         </div>
-
         <div class="col-lg-3 col-md-6 portfolio-item filter-web">
           <a href="">
             <img src="{% static 'img/hawaii/kauai-thumb.jpg' %}" alt="">
@@ -460,82 +484,67 @@
             </div>
           </a>
         </div>
-
       </div>
-
     </div>
-  </section><!-- #portfolio -->
-
-  <!--==========================
-      Team Section
-    ============================-->
+  </section><!-- END portfolio -->
+  <!--####################################################################-->
+  <!--###################### Testimonials ################################-->
+  <!--####################################################################-->
   <section id="team">
-    <div class="container wow fadeInUp">
-      <div class="section-header">
-        <h3 class="section-title">Team</h3>
-        <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-          doloremque</p>
-      </div>
-      <div class="row">
-        <div class="col-lg-3 col-md-6">
-          <div class="member">
-            <div class="pic"><img src="img/team-1.jpg" alt=""></div>
-            <h4>Walter White</h4>
-            <span>Chief Executive Officer</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
+    <section id="carousel">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-title">TESTIMONIALS</h3>
         </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="member">
-            <div class="pic"><img src="img/team-2.jpg" alt=""></div>
-            <h4>Sarah Jhinson</h4>
-            <span>Product Manager</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="member">
-            <div class="pic"><img src="img/team-3.jpg" alt=""></div>
-            <h4>William Anderson</h4>
-            <span>CTO</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="member">
-            <div class="pic"><img src="img/team-4.jpg" alt=""></div>
-            <h4>Amanda Jepson</h4>
-            <span>Accountant</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="quote"><i class="fa fa-quote-left fa-4x wow bounceIn"></i></div>
+            <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
+              <!-- Carousel indicators -->
+              <ol class="carousel-indicators wow bounceIn">
+                <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+                <li data-target="#fade-quote-carousel" data-slide-to="2"></li>
+              </ol>
+              <!-- Carousel items -->
+              <div class="carousel-inner wow flipInX">
+                <div class="carousel-item active">
+                  <blockquote>
+                    <p>Excellence riviera cancun was a dream resort, and the honeymoon suites at the excellence club
+                      were insane! We can't wait to book another vacation next year with Janus travel.</p>
+                    <b>Rachel M. - Chicago, IL.</b>
+                  </blockquote>
+                </div>
+                <div class="carousel-item">
+                  <blockquote>
+                    <p>I have been using these guys for over 25 years and have no intention of going elsewhere. They are
+                      a diamond in the rough! Use them.....you won't be disappointed.</p>
+                    <b>Mark S. - Algonquin, IL.</b>
+                  </blockquote>
+                </div>
+                <div class="carousel-item">
+                  <blockquote>
+                    <p>We have used Janus travel for our honeymoon and this year for our anniversary. We had the perfect
+                      honeymoon trip just by giving them our budget and what we wanted...</p>
+                    <b>Anna W. - Des Plaines, IL.</b>
+                  </blockquote>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
           </div>
         </div>
       </div>
-
-    </div>
-  </section><!-- #team -->
+      </div>
+    </section>
+  </section>
 
   <!--==========================
       Contact Section
@@ -635,4 +644,4 @@
     <div class="copyright">
       &copy; Copyright <strong>Janus Travel</strong>. All Rights Reserved
     </div>
-{% endblock %}
+    {% endblock %}
