@@ -1,4 +1,5 @@
 {% load static %}
+{% load django_bootstrap_breadcrumbs %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,11 +23,11 @@
     <link rel="stylesheet" href="{% static 'lib/font-awesome/css/font-awesome.min.css' %}">
     <!--------- Custom ---------->
     <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
-
     <!------ Google Fonts ------->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo:regular,italic,500,500italic,600,600italic,700,700italic" rel="stylesheet" />
     <!----------- images/portfolio ----------->
     <!-- App -->
 
@@ -37,7 +38,9 @@
 
 
 {% block content %}
-    <!-- Content Here -->
+    {% block breadcrumbs %}
+        {% render_breadcrumbs %}
+    {% endblock %}
 {% endblock content %}
 
 <!--~~~~~~~~~~~~~~ Scripts ~~~~~~~~~~~~~~~-->
@@ -69,7 +72,5 @@ $('#services').modal('show')
 <!---------- WOW! ----------->
 <script src="{% static 'lib/wow/wow.js' %} "></script>
 <script src="{% static 'lib/wow/wow.min.js' %} "></script>
-<!-------- Analytics -------->
-<script src="{% static 'lib/auryc/auryc.min.js' %} "></script>
 </body>
 </html>
