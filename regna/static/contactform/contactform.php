@@ -8,7 +8,7 @@
 /***************** Configuration *****************/
 
   // Replace with your real receiving email address
-  $contact_email_to = "contact@example.com";
+  $contact_email_to = "dcollins@linuxmail.org";
 
   // Title prefixes
   $subject_title = "Contat Form Message:";
@@ -35,7 +35,7 @@
     $subject = filter_var($_POST["subject"], FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
     $message = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
 
-    if(!$contact_email_to || $contact_email_to == 'contact@example.com') {
+    if(!$contact_email_to || $contact_email_to == 'dcollins@linuxmail.org') {
       die('The contact form receiving email address is not configured!');
     }
 
@@ -77,4 +77,4 @@
       echo 'Could not send mail! Please check your PHP mail configuration.';
     }
   }
-?>
+

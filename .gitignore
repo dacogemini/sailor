@@ -116,4 +116,4 @@ celerybeat-schedule
 dmypy.json
 
 # Pyre type checker
-.pyre/
+.pyre/sendgrid.env
