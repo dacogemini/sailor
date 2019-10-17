@@ -8,7 +8,7 @@ from sendgrid.helpers.mail import (From, To, PlainTextContent, HtmlContent, Mail
 
 def index(request):
     sendgrid_client = SendGridAPIClient(
-        api_key=os.environ.get('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'))
+        api_key=os.environ.get('xxxxxxxxxxxxxxxxxxxxx'))
     from_email = From('dcollins31@gmail.com')
     to_email = To('dcollins@linuxmail.org')
     subject = 'Sending with Twilio SendGrid is Fun'
