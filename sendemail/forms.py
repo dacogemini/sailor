@@ -60,14 +60,14 @@ STATES = (
 
 
 class ContactForm(forms.Form):
-    first_name = forms.CharField(max_length=30)
-    last_name = forms.CharField(max_length=30)
-    from_email = forms.EmailField(required=True)
-    subject = forms.CharField(required=True)
+    first_name = forms.CharField(max_length=30, widget=forms.TextInput(attrs={'size': 25}))
+    last_name = forms.CharField(max_length=30, widget=forms.TextInput(attrs={'size': 25}))
+    from_email = forms.EmailField(required=True, widget=forms.TextInput(attrs={'size': 25}))
+    subject = forms.CharField(required=True, widget=forms.TextInput(attrs={'size': 25}))
     message = forms.CharField(widget=forms.Textarea, required=True)
     address_1 = forms.CharField(
         label='Address',
-        widget=forms.TextInput(attrs={'placeholder': '1234 Main St'})
+        widget=forms.TextInput(attrs={'size': 50})
     )
 
     city = forms.CharField()
@@ -80,19 +80,19 @@ class ContactForm(forms.Form):
         self.helper = FormHelper()
         self.helper.layout = Layout(
             Row(
-                Column('first_name', css_class='form-group col-lg-5 col-md-8'),
-                Column('last_name', css_class='form-group col-lg-5 col-md-8'),
-                Column('from_email', css_class='form-group col-lg-5 col-md-8'),
-                Column('subject', css_class='form-group col-lg-5 col-md-8'),
+                Column('first_name', css_class='form-group col-lg-6col-md-8'),
+                Column('last_name', css_class='form-group col-lg-6 col-md-8'),
+                Column('from_email', css_class='form-group col-lg-12 col-md-8'),
+                Column('subject', css_class='form-group col-lg-12 col-md-8'),
                 css_class='form-row'
             ),
             'address_1',
             
             Row(
-                Column('city', css_class='form-group col-md-6 mb-0'),
-                Column('state', css_class='form-group col-md-4 mb-0'),
-                Column('zip_code', css_class='form-group col-md-2 mb-0'),
-                Column('message', css_class='form-group col-md-6 mb-0'),
+                Column('city', css_class='form-group col-md-12 mb-0'),
+                Column('state', css_class='form-group col-lg-12 mb-0'),
+                Column('zip_code', css_class='form-group col-md-12 mb-0'),
+                Column('message', css_class='form-group col-lg-12 mb-0'),
                 css_class='form-row'
             ),
             Submit('submit', 'SEND')
