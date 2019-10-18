@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+<!--===================================================-->
+<!--====================== Contact ======================-->
+<!--===================================================-->
+
+        <section id="contact">
+                <div class="container wow fadeInUp">
+                  <div class="section-header">
+                    <h3 class="section-title"><a href="/"><i class="fas fa-home" style="color: rgba(0, 0, 0, 0.646);"></a></i>&nbsp &nbsp Contact Us</h3>
+                    <p class="section-description"> <b>Thank you for contacting Janus Travel!</b> <br><em>We are located in the historic Norwood Park neighborhood of Chicago.</em></p>
+                  </div>
+                </div>
+
+
+    <!-- Uncomment below if you wan to use dynamic maps -->
+    <iframe src="https://maps.google.com/maps?q=6121%20N.%20Northwest%20Highway&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    <div class="container wow fadeInUp mt-5">
+        <div class="row justify-content-center">
+
+            <div class="col-lg-3 col-md-4">
+
+                <div class="info">
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p>6121 N. Northwest Highway<br>Chicago, IL. 60631</p>
+                    </div>
+
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p>info@example.com</p>
+                    </div>
+
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p>+1 5589 55488 55s</p>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+                    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                </div>
+
+            </div>
+
+            <!--======================= Form ========================-->
+                <div class="form">
+                    <form method="post">
+                        {% csrf_token %}
+                        {% crispy form %}
+                    </form>
+                </div>
+            </div>
+        </div>
+</section><!-- #contact -->
+{% endblock %}

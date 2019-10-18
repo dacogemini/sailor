@@ -1,8 +1,9 @@
-from django.conf.urls import url
+from django.contrib import admin
+from django.urls import path
 
-from .views import index
-
+from .views import emailView, successView
 
 urlpatterns = [
-    url(r'^contact/', index, name='contact'),
+    path('email/', emailView, name='email'),
+    path('success/', successView, name='success'),
 ]
