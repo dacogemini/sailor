@@ -25,25 +25,6 @@ def emailView(request):
     return render(request, "email.html", {'form': form})
 
 
-<<<<<<< HEAD
 def successView(request):
     template = loader.get_template("../templates/success.html")
     return HttpResponse(template.render())
-=======
-def index(request):
-    sendgrid_client = SendGridAPIClient(
-        api_key=os.environ.get('xxxxxxxxxxxxxxxxxxxxx'))
-    from_email = From('dcollins31@gmail.com')
-    to_email = To('dcollins@linuxmail.org')
-    subject = 'Sending with Twilio SendGrid is Fun'
-    plain_text_content = PlainTextContent(
-        'and easy to do anywhere, even with Python'
-    )
-    html_content = HtmlContent(
-        '<strong>and easy to do anywhere, even with Python</strong>'
-    )
-    message = Mail(from_email, to_email, subject, plain_text_content, html_content)
-    response = sendgrid_client.send(message=message)
-
-    return HttpResponse('Email Sent!')
->>>>>>> 4a16bd183bd7af626d6c4a3d63d955a70f3cc28d

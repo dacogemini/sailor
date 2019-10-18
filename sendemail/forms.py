@@ -69,6 +69,7 @@ class ContactForm(forms.Form):
         label='Address',
         widget=forms.TextInput(attrs={'placeholder': '1234 Main St'})
     )
+
     city = forms.CharField()
     state = forms.ChoiceField(choices=STATES)
     zip_code = forms.CharField(label='Zip')
@@ -79,14 +80,14 @@ class ContactForm(forms.Form):
         self.helper = FormHelper()
         self.helper.layout = Layout(
             Row(
-                Column('first_name', css_class='form-group col-md-6 mb-0'),
-                Column('last_name', css_class='form-group col-md-6 mb-0'),
-                Column('from_email', css_class='form-group col-md-6 mb-0'),
-                Column('subject', css_class='form-group col-md-6 mb-0'),
+                Column('first_name', css_class='form-group col-lg-5 col-md-8'),
+                Column('last_name', css_class='form-group col-lg-5 col-md-8'),
+                Column('from_email', css_class='form-group col-lg-5 col-md-8'),
+                Column('subject', css_class='form-group col-lg-5 col-md-8'),
                 css_class='form-row'
             ),
             'address_1',
-            'address_2',
+            
             Row(
                 Column('city', css_class='form-group col-md-6 mb-0'),
                 Column('state', css_class='form-group col-md-4 mb-0'),
