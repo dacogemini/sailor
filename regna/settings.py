@@ -11,7 +11,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '$iy-+k(c0zeuo+91uxpjkp&)u3wvfs71!0=&qvyi$_vl*a#fyz'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -104,10 +104,10 @@ USE_L10N = True
 USE_TZ = True
 
 
-STATIC_ROOT= os.path.join(BASE_DIR, 'assets')
+STATIC_ROOT= os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
+    os.path.join(BASE_DIR, 'regna/static')
 ]
 
 try:
