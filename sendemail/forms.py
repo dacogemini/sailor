@@ -87,7 +87,7 @@ class ContactForm(forms.Form):
                 css_class='form-row'
             ),
             'address_1',
-            
+
             Row(
                 Column('city', css_class='form-group col-md-12 mb-0'),
                 Column('state', css_class='form-group col-lg-12 mb-0'),
