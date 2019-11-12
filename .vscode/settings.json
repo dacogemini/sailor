@@ -7,5 +7,6 @@
         "rica",
         "thumb",
         "unstyled"
-    ]
+    ],
+    "python.pythonPath": "env/bin/python3.8"
 }
