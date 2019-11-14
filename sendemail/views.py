@@ -5,10 +5,7 @@ from django.shortcuts import render, redirect
 from .forms import ContactForm
 
 def emailView(request):
-    if request.method == 'GET':
-        form = ContactForm()
-    else:
-        form = ContactForm(request.POST)
+     form = ContactForm(request.POST)
         # runs validation routines for all its fields
         if form.is_valid():
             first_name = form.cleaned_data['first_name']
