@@ -7,6 +7,7 @@ from .forms import ContactForm
 def emailView(request):
     if request.method == 'GET':
         form = ContactForm()
+        console.log('first_name');
     else:
         form = ContactForm(request.POST)
         # runs validation routines for all its fields
