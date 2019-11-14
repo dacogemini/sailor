@@ -4,8 +4,9 @@ from django.template import Context, loader
 from django.shortcuts import render, redirect
 from .forms import ContactForm
 
+
 def emailView(request):
-   if request.method == 'GET':
+    if request.method == 'GET':
         form = ContactForm()
     else:
         form = ContactForm(request.POST)
