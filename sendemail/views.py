@@ -12,6 +12,7 @@ def emailView(request):
         form = ContactForm(request.POST)
         # runs validation routines for all its fields
         if form.is_valid():
+            form.save()
             first_name = form.cleaned_data['first_name']
             last_name = form.cleaned_data['last_name']
             subject = form.cleaned_data['subject']
