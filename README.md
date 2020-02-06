@@ -1,4 +1,3 @@
 # The Offical Website of Janus Travel
 
-#### Built with :heart:
-#### By:Oliviam Creative Labs
+#### Built with :heart: by Oliviam Creative Labs
