@@ -10,4 +10,4 @@
 ![Django](https://lh3.googleusercontent.com/Fu-m9LrAEMCweRcmyXLEryYOrvCU9aTYD10aDiyokaqpv3JEo7Yal0YOw27F6wWcj0L-tsZDoZimMziWy23YsQ8Dt7zXZqUSq2v11p7lYqoOEuK82jwpa4jRr_k51laBygybXVLKoA=w600)
 
 ### ABOUT US
-![Django](https://lh3.googleusercontent.com/gD6X_3WjnhMuOJOsznbEieoS9sZ3vwAyUbjnoT4KOSiLyw99sW9L09oXFlw1GJF8GUrjXz3SGgeCVgrgejr9Wn9uWub8btKTZxmst4vIz5_pPvrU2vC0OwBmvzj7cQZPRrf8SNyABw=w2400)
+![Django](https://lh3.googleusercontent.com/gD6X_3WjnhMuOJOsznbEieoS9sZ3vwAyUbjnoT4KOSiLyw99sW9L09oXFlw1GJF8GUrjXz3SGgeCVgrgejr9Wn9uWub8btKTZxmst4vIz5_pPvrU2vC0OwBmvzj7cQZPRrf8SNyABw=w2000)
