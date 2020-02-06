@@ -6,5 +6,5 @@
 |:---:|:---:|:---:|
 | https://tinyurl.com/4xnkupg | https://sass-lang.com/install | https://tinyurl.com/zgkz98z |
 
-
-![Django](https://lh3.googleusercontent.com/Fu-m9LrAEMCweRcmyXLEryYOrvCU9aTYD10aDiyokaqpv3JEo7Yal0YOw27F6wWcj0L-tsZDoZimMziWy23YsQ8Dt7zXZqUSq2v11p7lYqoOEuK82jwpa4jRr_k51laBygybXVLKoA=w400)
+#### HOME PAGE
+![Django](https://lh3.googleusercontent.com/Fu-m9LrAEMCweRcmyXLEryYOrvCU9aTYD10aDiyokaqpv3JEo7Yal0YOw27F6wWcj0L-tsZDoZimMziWy23YsQ8Dt7zXZqUSq2v11p7lYqoOEuK82jwpa4jRr_k51laBygybXVLKoA=w600)
